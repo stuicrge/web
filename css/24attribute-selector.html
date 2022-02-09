@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        /* j로 시작하는 문장 */
+        [title^="j"] {
+            color:green;
+        }
+
+        /* a로 끝나는 문장 */
+        [title$="a"]{
+            background-color:gold;
+        }
+
+
+        /* h1요소중에 a로 끝나는 문장 */
+        h1[title$="a"]{
+            font-size:3em;
+        }
+
+        /* 문자 중간에 u가 들어가있는 문장 */
+        [title*="u"]{
+            font-family:'Courier New', Courier, monospace;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 title="jimin">Lorem, ipsum dolor.</h1>
+    <h1 title="jungkuk">Neque, quasi. Iusto!</h1>
+    <h1 title="rm">Soluta, fugiat. At.</h1>
+    <h1 title="v">Aperiam, illum dolore!</h1>
+    <h1 title="suga">Quaerat, esse. Debitis!</h1>
+
+    <h2 title="korea">Lorem, ipsum dolor.</h2>
+    <h2 title="seoul">Quas, illum quisquam.</h2>
+    <h2 title="asia">Fuga, eum ea.</h2>
+
+</body>
+</html>
