@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container{
+            display:flex;
+            justify-content: content; /*위치 정하기 왼쪽시작 오른쪽시작 띄어쓰기 등등*/
+            height:300px;
+            background-color:grey;
+
+        }
+        .item{
+            font-size: 32px;
+            text-align:center;
+        }
+        .item:nth-child(odd){
+            background-color:blue;
+            color:white;
+        }
+        .item:nth-child(even){
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.item#item$*5{$} -->
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+
+    <hr>
+
+    <style>
+        .menu{
+            display:flex;
+            background:#222;
+            justify-content: space-between;
+        }
+        .left-menu,.right-menu{
+            display:flex;
+        }
+        .menu-item{
+            font-size: 30px;
+            text-align: center;
+            color:antiquewhite;
+            padding:10px;
+        }
+    </style>
+
+
+    <div class="menu">
+        <div class="left-menu">
+            <div class="menu-item">Lorem.</div>
+            <div class="menu-item">Deserunt.</div>
+            <div class="menu-item">Facere.</div>
+        </div>
+        <div class="right-menu">
+            <div class="menu-item">Lorem.</div>
+            <div class="menu-item">Similique!</div>
+        </div>
+    </div>
+
+</body>
+</html>

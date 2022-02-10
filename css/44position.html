@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .sub{
+            display:none;
+            position: absolute;
+            top:-5px;
+            left:150px;
+            background-color: red;
+            color:white;
+        }
+        ul{
+            padding:0px;
+            margin:0px;
+            list-style-type:none
+        }
+        .main>li{
+            width:120px;
+            position:relative;
+            margin:0px;
+            padding:3px;
+            background: black;
+            color:white;
+            box-sizing: border-box;
+            border: 5px solid black;
+
+        }
+        .main>li:hover{
+            border-right: 5px solid yellow;
+        }
+        .main>li:hover>.sub{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="main">
+        <li>
+            Lorem.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Assumenda?</li>
+                <li>Repellat.</li>
+            </ul>
+        </li>
+        <li>
+            Voluptas?
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Esse!</li>
+                <li>Tempora!</li>
+            </ul>
+        </li>
+        <li>
+            Voluptatibus.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Iusto?</li>
+                <li>Placeat.</li>
+            </ul>
+        </li>
+        <li>
+            Eum!
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Cum?</li>
+                <li>Qui?</li>
+            </ul>
+        </li>
+        <li>
+            Suscipit.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Doloremque?</li>
+                <li>Laboriosam.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

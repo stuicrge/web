@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .ex{
+            display:inline-block;
+            border:1px solid black;
+        }
+
+        .ex:first-of-type{
+            width:100px;
+            height:100px;
+            margin:20px;
+            padding:10px;
+        }
+
+        .ex:nth-of-type(2){
+            width:50px;
+            height:70px;
+            margin:15px;
+            padding:7px;
+        }
+    </style>
+</head>
+<body>
+    <p>inline-block: 배치는 inline처럼 크기는(넓이 높이 마진 패딩) block처럼</p>
+    <!-- .ex*5>lorem3 -->
+    <div class="ex">Lorem, ipsum dolor.</div>
+    <div class="ex">Unde, quam temporibus.</div>
+    <div class="ex">Soluta, expedita nesciunt.</div>
+    <div class="ex">Tempore, eos saepe!</div>
+    <div class="ex">Quod, sequi porro.</div>
+</body>
+</html>
