@@ -10,20 +10,42 @@
 </head>
 <body>
     <script>
-
-        let printDouble = function(a){
-
-            let a = {
-                b : 3
+        let arr1 = [[3, 9, -1],[7,1,100],[99,88,77,66,55],[4,3,2,1]];
+        let sum=0;
+        let reverse1="";
+        
+        for(let i=0; i<arr1.length;i++){
+            //console.log(arr1[i]);
+            for(let j=0; j<arr1[i].length;j++){
+                console.log(arr1[i][j]);
             }
-            return(a+a);
         }
-        console.log(printDouble("hello"));
-        console.log(printDouble("hi"));
-        console.log(printDouble("spring"));
 
+        for(let i=0; i<arr1.length;i++)
+        {
+            for(let j=0;j<arr1[i].length;j++){
+                sum+=arr1[i][j];
+            }
+        }
+        console.log(sum);
 
+        console.log("");
+        for(let i=0; i<arr1.length;i++){
+            for(let j=arr1[i].length-1;j>=0;j--){
+                console.log(arr1[i][j]);
+            }
+        }
+
+        console.log("");
+        for(let i=arr1.length-1; i>=0;i--){
+            for(let j=arr1[i].length-1;j>=0;j--){ // arr1 X arr1[i] o
+                console.log(arr1[i][j]);
+            }
+        }
+        
     </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

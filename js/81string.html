@@ -10,17 +10,34 @@
 </head>
 <body>
     <script>
-
-        let printDouble = function(a){
-
-            let a = {
-                b : 3
+        let obj1 = {
+            aprop : "hi",
+            amethod : function(){
+                console.log(99);
             }
-            return(a+a);
-        }
-        console.log(printDouble("hello"));
-        console.log(printDouble("hi"));
-        console.log(printDouble("spring"));
+        };
+        console.log(obj1.aprop);
+        obj1.amethod();
+
+        let str1 = "hello";
+        console.log(str1);
+        console.log(str1.length);
+
+        let str2 = "javascript";
+        console.log(str2.length);
+
+        let str3 = "010101-1000000";
+        console.log(str3.length);
+
+        let str4 = "010-5035-1321";
+        console.log(str4.length);
+
+        let str5 = "java";
+        console.log(str5.toUpperCase());//대문자로 변환해줌
+        
+        let str6 = "STRING";
+        console.log(str6.toLowerCase());
+
 
 
     </script>

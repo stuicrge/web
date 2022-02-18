@@ -9,20 +9,22 @@
     </style>
 </head>
 <body>
+    <input type = "text" id ="input1">
+    <button id="button1">성별 확인</button>
+    <p id="para1"></p>
+
     <script>
-
-        let printDouble = function(a){
-
-            let a = {
-                b : 3
+        document.getElementById("button1").onclick = function(){
+            let N = document.querySelector("#input1").value;
+            //document.getElementById("input1").innerHTML = N;
+            if((N.slice(6,7)=="1") || (N.slice(6,7)=="3")){
+                document.getElementById("para1").innerHTML="남자";
+            }else if((N.slice(6,7)=="2") || (N.slice(6,7)=="4")){
+                document.getElementById("para1").innerHTML="여자";
+            }else{
+                document.getElementById("para1").innerHTML="오류"
             }
-            return(a+a);
         }
-        console.log(printDouble("hello"));
-        console.log(printDouble("hi"));
-        console.log(printDouble("spring"));
-
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
